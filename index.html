@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum - AI-Powered Agency</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="quantum-logo">
+                <div class="quantum-circle"></div>
+                <div class="quantum-circle"></div>
+                <div class="quantum-circle"></div>
+            </div>
+            <h1 class="glitch" data-text="QUANTUM">QUANTUM</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loader-text">Initializing AI Systems...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Fixed Image -->
+    <div id="fixed-image"></div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <button id="mobile-close" class="mobile-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#page1" class="mobile-nav-link" data-text="Home">Home</a>
+                <a href="#page2" class="mobile-nav-link" data-text="About">About</a>
+                <a href="#page3" class="mobile-nav-link" data-text="Services">Services</a>
+                <a href="#page4" class="mobile-nav-link" data-text="Projects">Projects</a>
+                <a href="#page5" class="mobile-nav-link" data-text="Contact">Contact</a>
+            </nav>
+            <div class="mobile-social">
+                <a href="#" class="mobile-social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mobile-social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="mobile-social-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <!-- Page 1 - Hero -->
+        <div id="page1">
+            <nav>
+                <div class="nav-logo-container">
+                    <svg class="quantum-nav-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="logo-orbit" cx="50" cy="50" r="35" />
+                        <circle class="logo-orbit" cx="50" cy="50" r="25" />
+                        <circle class="logo-core" cx="50" cy="50" r="15" />
+                        <circle class="logo-particle" cx="50" cy="15" r="3" />
+                        <circle class="logo-particle" cx="85" cy="50" r="3" />
+                        <circle class="logo-particle" cx="50" cy="85" r="3" />
+                    </svg>
+                    <span class="logo-text">QUANTUM</span>
+                </div>
+                <div id="nav-part2">
+                    <h4><a href="#page2">About</a></h4>
+                    <h4><a href="#page3">Services</a></h4>
+                    <h4><a href="#page4">Projects</a></h4>
+                    <h4><a href="#page5">Contact</a></h4>
+                </div>
+                <div class="nav-actions">
+                    <button class="ai-chat-btn">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Assistant</span>
+                    </button>
+                    <h3 id="menu-toggle">Menu</h3>
+                </div>
+            </nav>
+
+            <div id="center">
+                <div id="left">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        AI-Powered Solutions
+                    </div>
+                    <h3 class="fade-in-up">Quantum is a next-generation AI agency specializing in machine learning, 
+                        neural networks, and intelligent automation to transform your business.</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h2 class="counter" data-target="500">0</h2>
+                            <p>AI Models Deployed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h2 class="counter" data-target="98">0</h2>
+                            <p>Success Rate %</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <h1 class="glitch-title" data-text="FUTURE">FUTURE</h1>
+                    <h1 class="glitch-title" data-text="POWERED">POWERED</h1>
+                    <h1 class="glitch-title" data-text="BY AI">BY AI</h1>
+                    <div class="cta-buttons">
+                        <button class="btn-primary pulse">
+                            <span>Explore AI Solutions</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-play"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Floating Elements -->
+            <div class="floating-elements">
+                <div class="float-cube"></div>
+                <div class="float-sphere"></div>
+                <div class="float-pyramid"></div>
+            </div>
+
+            <div id="hero-shape">
+                <div id="hero-1"></div>
+                <div id="hero-2"></div>
+                <div id="hero-3"></div>
+            </div>
+        </div>
+
+        <!-- Page 2 - About -->
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>MACHINE LEARNING</h1>
+                    <div class="gola"></div>
+                    <h1>NEURAL NETWORKS</h1>
+                    <div class="gola"></div>
+                    <h1>DEEP LEARNING</h1>
+                    <div class="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>MACHINE LEARNING</h1>
+                    <div class="gola"></div>
+                    <h1>NEURAL NETWORKS</h1>
+                    <div class="gola"></div>
+                    <h1>DEEP LEARNING</h1>
+                    <div class="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>MACHINE LEARNING</h1>
+                    <div class="gola"></div>
+                    <h1>NEURAL NETWORKS</h1>
+                    <div class="gola"></div>
+                    <h1>DEEP LEARNING</h1>
+                    <div class="gola"></div>
+                </div>
+            </div>
+
+            <div id="page2-bottom">
+                <div class="section-header">
+                    <span class="section-tag">WHO WE ARE</span>
+                    <h1 class="reveal-text">We are AI pioneers, data scientists, and creative technologists pushing 
+                        the boundaries of artificial intelligence.</h1>
+                </div>
+                
+                <div id="bottom-part2">
+                    <div class="image-card">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop" 
+                            alt="AI Technology">
+                        <div class="image-overlay">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <div class="ai-badge">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-First Approach</span>
+                        </div>
+                        <p>We harness the power of cutting-edge AI technologies including GPT models, computer vision, 
+                            and predictive analytics to create solutions that learn, adapt, and evolve. Our team combines 
+                            deep technical expertise with creative innovation to deliver transformative results.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">TensorFlow</span>
+                            <span class="tech-item">PyTorch</span>
+                            <span class="tech-item">OpenAI</span>
+                            <span class="tech-item">Anthropic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Visualization -->
+            <div class="ai-visualization">
+                <canvas id="neural-network"></canvas>
+            </div>
+        </div>
+
+        <!-- Page 3 - Services -->
+        <div id="page3">
+            <div class="section-header centered">
+                <span class="section-tag">OUR SERVICES</span>
+                <h1>AI-Powered Solutions</h1>
+            </div>
+
+            <div id="services-grid">
+                <div class="service-card" data-image="https://i.pinimg.com/1200x/38/5e/d7/385ed712e43c1db062f3d62f0de0b2a8.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h2>Machine Learning</h2>
+                    <p>Custom ML models that predict, classify, and optimize your business processes.</p>
+                    <div class="service-overlay"></div>
+                </div>
+
+                <div class="service-card" data-image="https://i.pinimg.com/736x/b8/51/f7/b851f74769da29f9fde5be14db9e9490.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h2>AI Automation</h2>
+                    <p>Intelligent automation solutions that streamline workflows and reduce costs.</p>
+                    <div class="service-overlay"></div>
+                </div>
+
+                <div class="service-card" data-image="https://i.pinimg.com/1200x/77/ce/53/77ce53a53575e3d49873ba7dfc1747f2.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Computer Vision</h2>
+                    <p>Advanced image recognition and visual intelligence systems.</p>
+                    <div class="service-overlay"></div>
+                </div>
+
+                <div class="service-card" data-image="https://i.pinimg.com/736x/2c/e5/51/2ce5515552b669566d24bd72ff39301a.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h2>NLP Solutions</h2>
+                    <p>Natural language processing for chatbots, sentiment analysis, and more.</p>
+                    <div class="service-overlay"></div>
+                </div>
+
+                <div class="service-card" data-image="https://i.pinimg.com/1200x/10/66/61/106661f84760f2fe684621f0dfe8bd1d.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2>Predictive Analytics</h2>
+                    <p>Data-driven insights and forecasting powered by advanced algorithms.</p>
+                    <div class="service-overlay"></div>
+                </div>
+
+                <div class="service-card" data-image="https://i.pinimg.com/1200x/6d/79/7d/6d797d40c3a3956c5a53cfbd2a63b52e.jpg">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h2>Neural Networks</h2>
+                    <p>Deep learning architectures for complex pattern recognition tasks.</p>
+                    <div class="service-overlay"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 - Projects -->
+        <div id="page4">
+            <div class="section-header centered">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-heading">Featured AI Projects</h2>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="https://i.pinimg.com/736x/1e/c3/63/1ec363db9598a75130f66966aacbc810.jpg" 
+                                alt="AI Healthcare">
+                            <div class="slide-info">
+                                <span class="project-tag">Healthcare AI</span>
+                                <h3>Medical Diagnosis System</h3>
+                                <p>Deep learning model for early disease detection</p>
+                                <div class="project-metrics">
+                                    <span><i class="fas fa-check"></i> 95% Accuracy</span>
+                                    <span><i class="fas fa-clock"></i> 50% Faster</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="https://i.pinimg.com/736x/89/6d/1f/896d1f6590cd4a0150eb71bf3c1608eb.jpg" 
+                                alt="Financial AI">
+                            <div class="slide-info">
+                                <span class="project-tag">FinTech</span>
+                                <h3>Fraud Detection AI</h3>
+                                <p>Real-time transaction monitoring with ML</p>
+                                <div class="project-metrics">
+                                    <span><i class="fas fa-shield-alt"></i> 99.9% Detection</span>
+                                    <span><i class="fas fa-dollar-sign"></i> $2M Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop" 
+                                alt="Retail AI">
+                            <div class="slide-info">
+                                <span class="project-tag">Retail</span>
+                                <h3>Smart Inventory System</h3>
+                                <p>Predictive analytics for stock optimization</p>
+                                <div class="project-metrics">
+                                    <span><i class="fas fa-boxes"></i> 40% Less Waste</span>
+                                    <span><i class="fas fa-arrow-up"></i> 30% Revenue+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop" 
+                                alt="Manufacturing AI">
+                            <div class="slide-info">
+                                <span class="project-tag">Manufacturing</span>
+                                <h3>Quality Control Vision</h3>
+                                <p>Computer vision for defect detection</p>
+                                <div class="project-metrics">
+                                    <span><i class="fas fa-eye"></i> 100K+ Inspections</span>
+                                    <span><i class="fas fa-certificate"></i> Zero Defects</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <img src="https://i.pinimg.com/736x/8d/d4/4f/8dd44f8102880ebba201f446d2047410.jpg" 
+                                alt="Customer Service AI">
+                            <div class="slide-info">
+                                <span class="project-tag">Customer Service</span>
+                                <h3>AI Chatbot Platform</h3>
+                                <p>Conversational AI for customer support</p>
+                                <div class="project-metrics">
+                                    <span><i class="fas fa-comments"></i> 10K+ Chats/Day</span>
+                                    <span><i class="fas fa-smile"></i> 4.8/5 Rating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- Page 5 - Contact -->
+        <div id="page5">
+            <div class="contact-section">
+                <div class="contact-grid">
+                    <div class="contact-left">
+                        <span class="section-tag">GET IN TOUCH</span>
+                        <h1 class="contact-title">Let's Build the Future with AI</h1>
+                        <p class="contact-subtitle">Ready to transform your business with artificial intelligence?</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:hello@quantum.ai">hello@quantum.ai</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>San Francisco, CA 94102</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <button class="btn-primary">
+                                <span>Schedule Consultation</span>
+                                <i class="fas fa-calendar"></i>
+                            </button>
+                            <button class="btn-secondary">
+                                <i class="fas fa-file-download"></i>
+                                <span>Download Brochure</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <div class="ai-chat-widget">
+                            <div class="chat-header">
+                                <div class="chat-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div>
+                                    <h4>Quantum AI Assistant</h4>
+                                    <span class="status"><span class="status-dot"></span> Online</span>
+                                </div>
+                            </div>
+                            <div class="chat-body">
+                                <div class="message bot-message">
+                                    <p>Hello! 👋 I'm Quantum AI. How can I help you explore our AI solutions today?</p>
+                                </div>
+                            </div>
+                            <div class="chat-footer">
+                                <input type="text" placeholder="Type your message...">
+                                <button><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-col footer-brand">
+                    <h1>QUANTUM</h1>
+                    <p>Pioneering the future of business through artificial intelligence and machine learning.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Kit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#">Machine Learning</a>
+                    <a href="#">AI Automation</a>
+                    <a href="#">Computer Vision</a>
+                    <a href="#">NLP Solutions</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Case Studies</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Quantum AI Agency. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
